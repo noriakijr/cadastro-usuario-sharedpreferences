@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.noriaki.cadastrarusuario.HomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvBemVindo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bem vindo!" />
+
+        <Button
+            android:id="@+id/btCadastrar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Cadastrar" />
+
+        <Button
+            android:id="@+id/btAlterarExcluir"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Alterar/Excluir" />
+
+        <Button
+            android:id="@+id/btListar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Listar" />
+
+        <Button
+            android:id="@+id/btLogout"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Logout" />
+
+    </LinearLayout>
+</LinearLayout>

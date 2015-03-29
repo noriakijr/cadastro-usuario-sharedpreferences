@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.noriaki.cadastrarusuario" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name=".FormUsuarioActivity"
+            android:label="@string/title_activity_form_usuario"
+            android:parentActivityName=".LoginActivity" >
+        </activity>
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/title_activity_home" >
+        </activity>
+        <activity
+            android:name=".ListarPessoasActivity"
+            android:label="@string/title_activity_listar_pessoas"
+            android:parentActivityName=".HomeActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.noriaki.cadastrarusuario.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".AlterarExcluirActivity"
+            android:label="@string/title_activity_alterar_excluir"
+            android:parentActivityName=".HomeActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.noriaki.cadastrarusuario.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".FormAlterarActivity"
+            android:label="@string/title_activity_form_alterar"
+            android:parentActivityName=".AlterarExcluirActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.noriaki.cadastrarusuario.AlterarExcluirActivity" />
+        </activity>
+    </application>
+
+</manifest>

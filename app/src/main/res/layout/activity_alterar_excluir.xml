@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="com.noriaki.cadastrarusuario.AlterarExcluirActivity">
+
+    <EditText
+        android:id="@+id/etCpf"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Digite o CPF" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btPreAlterar"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="Alterar" />
+
+        <Button
+            android:id="@+id/btExcluir"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="Excluir" />
+
+    </LinearLayout>
+
+</LinearLayout>
